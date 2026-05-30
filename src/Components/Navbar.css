@@ -1,0 +1,139 @@
+.navbar {
+    position: fixed;
+    /* background: linear-gradient(); */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5%;
+    z-index: 1000;
+
+}
+
+.glass {
+    background: linear-gradient(135deg, #241446 0%, #474787 100%, #40d7bc);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+
+}
+
+.nav-link::before,
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    transition: width 0.3s ease;
+}
+
+.nav-link::before {
+    left: 0;
+    background-color: #40d7bc;
+
+}
+
+.nav-link::after {
+    right: 0;
+    background-color: #241446;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+    width: 50%;
+}
+
+.humberger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+    gap: 3px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.line {
+    width: 23px;
+    height: 3px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.line1.open {
+    transform: rotate(45deg) translate(5px 5px);
+
+}
+
+.line2 {
+    opacity: 0;
+}
+
+.line3.open {
+    transform: rotate(-45deg) translate(7px -6px);
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*  flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 0 25px rgba(0, 0, 0, 0.1);
+
+}
+
+.mobile-links li {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.mobile-links li {
+    margin-bottom: 2rem;
+}
+
+.mobile-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+@media (max-width:768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .humberger {
+        display: flex;
+    }
+}
