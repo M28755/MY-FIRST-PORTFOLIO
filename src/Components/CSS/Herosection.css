@@ -1,0 +1,153 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0a0a0a;
+    overflow: hidden;
+    padding: 0 5%;
+}
+
+.bg-shape {
+    position: absolute;
+    border: 50%;
+    z-index: 0;
+}
+
+.shape1 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, #00d4ff, #004e92);
+    top: -100px;
+    left: -100px;
+    opacity: 0.4;
+    filter: blur(80px);
+}
+
+.shape2 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, #01303f, #02a9f7);
+    right: -50px;
+    bottom: -50px;
+    opacity: 0.4;
+    filter: blur(80px);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 4rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-greeting {
+    font-size: 1.2rem;
+    color: #00d4ff;
+    margin-bottom: 0.6rem;
+}
+
+.hero-name {
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.hero-typing {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.typing-highlight {
+    background-image: linear-gradient(90deg, #89d6fb, #02a9f7, #02577a);
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: #a0a0a0;
+    max-width: 500px;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: all 2s ease;
+}
+
+.hero-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    color: #00d4ff;
+}
+
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image-placeholder {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 80px;
+    }
+
+    .hero-image-placeholder {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media (max-width:468px) {
+    .typing-highlight {
+        font-weight: bold;
+
+    }
+
+    .hero-typing {
+        font-size: 1.1rem;
+    }
+
+    .hero-name {
+        font-size: 1rem;
+        font-weight: 900;
+    }
+
+}

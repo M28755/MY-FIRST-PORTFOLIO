@@ -1,5 +1,6 @@
 import Navbar from './Components/Navbar'
 import './App.css'
+import HeroSection from './Components/HeroSection'
 
 
 function App() {
@@ -7,7 +8,11 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <div className="app-container">
+        <Navbar />
+        <HeroSection />
+      </div>
+
     </>
   )
 }
