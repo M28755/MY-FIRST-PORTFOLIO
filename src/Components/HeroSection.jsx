@@ -32,6 +32,8 @@ function HeroSection() {
                                     2000,
                                     'Hacker (Ethical Hacker)',
                                     2000,
+                                    'Cyber-Security Engineer',
+                                    2000.
                                 ]}
                                 wrapper='span'
                                 speed={50}
