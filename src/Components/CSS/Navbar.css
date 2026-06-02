@@ -14,7 +14,7 @@
 }
 
 .glass {
-    background: linear-gradient(135deg, #241446 0%, #474787 100%, #40d7bc);
+    background: var(--bg-glass);
     backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 0 rgba(0, 0, 0, 0.3);
@@ -103,7 +103,7 @@
     align-items: center;
     justify-content: center; */
     z-index: 999;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.733);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
