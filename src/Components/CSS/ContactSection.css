@@ -1,0 +1,168 @@
+/* Contact Section Base */
+.contact-section {
+  min-height: 100vh;
+  padding: 100px 5%;
+  background: #0a0a0a;
+}
+
+.contact-section .section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* Container for Code and Form */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Code Block Visuals */
+.code-block {
+  background: #1e1e1e; /* VS Code Dark theme background */
+  border-radius: 12px;
+  overflow: hidden;
+  flex: 1;
+  max-width: 500px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5); /* Visual-depth */
+}
+
+.code-header {
+  background: #2d2d2d;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.filename {
+  margin-left: 10px;
+  color: #a0a0a0;
+  font-size: 0.9rem;
+  font-family: monospace;
+}
+
+.code-content {
+  padding: 25px;
+  color: #d4d4d4; 
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0;
+  overflow: scroll;
+}
+
+
+.keyword { color: #c586c0; }  
+.variable { color: #4ec9b0; }  
+.property { color: #9cdcfe; }  
+.string { color: #ce9178; }    
+.boolean { color: #569cd6; }  
+
+
+.contact-form-wrapper {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact-form {
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Floating Label Input Group */
+.input-group {
+  position: relative;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  color: white;
+  outline: none;
+  font-family: inherit;
+  resize: none;
+}
+
+.input-group label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #a0a0a0;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.3s ease; /* Micro-interaction transition */
+}
+
+/* Micro-interaction: Label floats up and turns neon blue when typing/focused */
+.input-group input:focus ~ label,
+.input-group input:valid ~ label,
+.input-group textarea:focus ~ label,
+.input-group textarea:valid ~ label {
+  top: -15px;
+  font-size: 0.85rem;
+  color: #00d4ff;
+}
+
+/* Micro-interaction: Neon underline on focus */
+.input-group input:focus,
+.input-group textarea:focus {
+  border-bottom-color: #00d4ff;
+  box-shadow: 0 3px 5px rgba(0, 212, 255, 0.3); /* Visual-depth glow */
+}
+
+/* Submit Button */
+.submit-btn {
+  padding: 15px 30px;
+  background: rgba(0, 212, 255, 0.2);
+  border: 1px solid rgba(0, 212, 255, 0.4);
+  color: #00d4ff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button Micro-interaction */
+.submit-btn:hover {
+  background: #00d4ff;
+  color: #0a0a0a;
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 212, 255, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .code-block, .contact-form-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+}
