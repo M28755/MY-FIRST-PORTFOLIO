@@ -1,0 +1,73 @@
+/* Footer Base */
+.footer {
+  padding: 40px 5%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle top border for visual-depth */
+  position: relative;
+  z-index: 10;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Social Links */
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-link {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative; /* Needed for the absolute positioned underline */
+  transition: color 0.3s ease;
+}
+
+/* Micro-interaction: The Sliding Underline */
+.footer-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #00d4ff; /* Neon blue underline */
+  transition: width 0.3s ease; /* Animates the width */
+}
+
+/* On hover, text turns blue and underline expands to 100% width */
+.footer-link:hover {
+  color: #00d4ff;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+/* Tagline & Copyright */
+.footer-tagline {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.footer-copyright {
+  color: #555555;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-links {
+    gap: 20px;
+  }
+  .footer-link {
+    font-size: 1rem;
+  }
+}

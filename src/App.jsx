@@ -4,6 +4,7 @@ import HeroSection from './Components/HeroSection'
 import AboutSection from './Components/AboutSection'
 import ProjectSection from './Components/ProjectSection'
 import ContactSection from './Components/ContactSection'
+import Footer from './Components/Footer'
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <AboutSection />
         <ProjectSection />
         <ContactSection/>
+        <Footer/>
       </div>
 
     </>
