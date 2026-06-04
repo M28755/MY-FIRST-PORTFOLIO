@@ -1,14 +1,16 @@
 import { motion } from 'framer-motion'
+import SkillBar from './SkillBar/SkillBar';
 import './CSS/AboutSection.css'
+
 
 function AboutSection() {
 
     const Skills = [
-        'HTML5',
-        'CSS',
-        'Javascript',
-        'react',
-        'git'
+        {name: 'HTML', level: 90},
+        {name:'CSS' , level: 85},
+        {name:'JAVASCRIPT', level:71},
+        {name:'React ', level:60},
+        {name: 'git', level:60}
 
     ]
 
@@ -43,17 +45,13 @@ function AboutSection() {
                 >
                     <div className="skills-card">
                         <h3 className="skills-title">My Tech Stack</h3>
-                        <div className="skills-grid">
-                            {
-                                Skills.map((skill, index) => (
-                                    <div className='skill-pill' key={index}>
-                                        {skill}
-
-                                    </div>
-                                ))
-
-                            }
-                        </div>
+                        {Skills.map((skill, index) => (
+            <SkillBar 
+              key={index} 
+              name={skill.name} 
+              level={skill.level} 
+            />
+          ))}
                     </div>
                 </motion.div>
 

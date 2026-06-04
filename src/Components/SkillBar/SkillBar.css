@@ -1,0 +1,48 @@
+/* Container for label and bar */
+.skill-bar-container {
+  margin-bottom: 24px;
+  cursor: default;
+}
+
+/* Name and Percentage labels */
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.skill-name {
+  color: #e0e0e0;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.skill-level {
+  color: #00d4ff;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* The background track of the bar */
+.skill-track {
+  height: 12px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05); /* Very subtle glass background */
+  overflow: hidden; /* Keeps the fill inside the rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* The colored fill inside the track */
+.skill-fill {
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #00d4ff, #007bff);
+  position: relative;
+  transition: filter 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.skill-bar-container:hover .skill-fill {
+  filter: brightness(1.4); 
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+}
