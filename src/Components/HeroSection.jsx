@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 import './CSS/Herosection.css'
+import Image from  '../assets/portfolio.jpeg'
 
 function HeroSection() {
     return (
@@ -60,7 +61,7 @@ function HeroSection() {
 
                     >
                         <div className="hero-image-placeholder ">
-                            <span>My  Image Goes Here</span>
+                            <img src={Image} alt=""  width={350} height={350}/>
                         </div>
 
                     </motion.div>
