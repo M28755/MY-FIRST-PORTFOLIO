@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import './CSS/ProjectSection.css'
 
-
+const imageModules = import.meta.glob('../assets/ProjrctImages/*.{png,jpg,jpeg}', { eager: true })
 function ProjectSection() {
     const projects = [
         {
@@ -9,8 +9,18 @@ function ProjectSection() {
             title: 'Admin Dashboard',
             description: '',
             tags: ['React'],
-            github: '#',
+            github: 'https://github.com/M28755/ADMIN-DASHBOARD',
             live: '#'
+        },
+        {
+            id:2,
+            title:"White Eagle Contructor",
+            description:"",
+            tags:['HTML', "CSS", 'JAVASCRIPT'],
+            github:'https://github.com/M28755/WHITE-EANGLES-CONSTROCTOR',
+            live:'#',
+            Image:imageModules['../assets/ProjrctImages/project2.png']?.default,
+           /*  avatar: require('../assets/ProjrctImages/project2.png') */
         }
     ];
 
@@ -50,7 +60,8 @@ function ProjectSection() {
                             variants={cardVarients}
                         >
                             <div className="project-image">
-
+                                
+                                 <img src={project.Image} alt="" />
                             </div>
 
                             <div className="project-content">
@@ -67,8 +78,8 @@ function ProjectSection() {
 
                                 {/* Action buttton */}
                                 <div className="project-links">
-                                    <a href={project.github} target="_blank" rel="noreferrer" className="project-btn">GitHub</a>
-                                    <a href={project.live} target="_blank" rel="noreferrer" className="project-btn primary-btn">Live Demo</a>
+                                    <a href={project.github} target="_self" rel="noreferrer" className="project-btn">GitHub</a>
+                                    <a href={project.live} target="_self" rel="noreferrer" className="project-btn primary-btn">Live Demo</a>
 
                                 </div>
                             </div>
