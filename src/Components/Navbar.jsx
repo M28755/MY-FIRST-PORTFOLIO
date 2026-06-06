@@ -18,7 +18,7 @@ function Navbar() {
                 {/* Desktop Links */}
                 <ul className="nav-links">
                     <li><a href="#about" className="footer-link">About</a></li>
-                    <li><a href="#project" className="footer-link">Project</a></li>
+                    <li><a href="#projects" className="footer-link">Project</a></li>
                     <li><a href="#contact" className="footer-link">Contact</a></li>
                 </ul>
                 {/* Hemburger icon */}
@@ -32,7 +32,7 @@ function Navbar() {
                     <div className='mobile-menu glass'>
                         <ul className="mobile-links">
                             <li><a href="#about" onClick={toggleMenu}>About</a></li>
-                            <li><a href="#project" onClick={toggleMenu}>Project</a></li>
+                            <li><a href="#projects" onClick={toggleMenu}>Project</a></li>
                             <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
                         </ul>
                     </div>
