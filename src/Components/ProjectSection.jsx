@@ -13,15 +13,25 @@ function ProjectSection() {
             live: '#'
         },
         {
-            id:2,
-            title:"White Eagle Contructor",
-            description:"",
-            tags:['HTML', "CSS", 'JAVASCRIPT'],
-            github:'https://github.com/M28755/WHITE-EANGLES-CONSTROCTOR',
-            live:'#',
-            Image:imageModules['../assets/ProjrctImages/project2.png']?.default,
-           /*  avatar: require('../assets/ProjrctImages/project2.png') */
+            id: 2,
+            title: "White Eagle Contructor",
+            description: "",
+            tags: ['HTML', "CSS", 'JAVASCRIPT'],
+            github: 'https://github.com/M28755/WHITE-EANGLES-CONSTROCTOR',
+            live: '#',
+            Image: imageModules['../assets/ProjrctImages/project2.png']?.default,
+            /*  avatar: require('../assets/ProjrctImages/project2.png') */
+        },
+        {
+            id: 2,
+            title: "Modern Coffee Shop",
+            description: "A responsive modern coffee shop website using modern design principles",
+            tags: ['HTML', "CSS", 'JAVASCRIPT'],
+            github: 'https://github.com/M28755/MODERN-COFFEE-SHOP',
+            live: '#',
+            Image: imageModules['../assets/ProjrctImages/project3.png']?.default,
         }
+
     ];
 
     const containerVarients = {
@@ -60,8 +70,8 @@ function ProjectSection() {
                             variants={cardVarients}
                         >
                             <div className="project-image">
-                                
-                                 <img src={project.Image} alt="" />
+
+                                <img src={project.Image} alt="" />
                             </div>
 
                             <div className="project-content">
