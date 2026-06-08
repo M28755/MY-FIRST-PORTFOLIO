@@ -29,7 +29,7 @@ function ProjectSection() {
             tags: ['HTML', "CSS", 'JAVASCRIPT'],
             github: 'https://github.com/M28755/MODERN-COFFEE-SHOP',
             live: '#',
-            Image: imageModules['../assets/ProjrctImages/project3.png']?.default,
+            Image: imageModules['../assets/ProjrctImages/project3.jpg']?.default,
         }
 
     ];
