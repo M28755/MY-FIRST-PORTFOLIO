@@ -23,13 +23,13 @@ function ProjectSection() {
             /*  avatar: require('../assets/ProjrctImages/project2.png') */
         },
         {
-            id: 2,
+            id: 3,
             title: "Modern Coffee Shop",
             description: "A responsive modern coffee shop website using modern design principles",
             tags: ['HTML', "CSS", 'JAVASCRIPT'],
             github: 'https://github.com/M28755/MODERN-COFFEE-SHOP',
             live: '#',
-            Image: imageModules['../assets/ProjrctImages/project3.jpg']?.default,
+            Image: imageModules['../assets/ProjrctImages/project3.png']?.default,
         }
 
     ];
