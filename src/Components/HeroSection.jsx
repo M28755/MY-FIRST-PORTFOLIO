@@ -44,8 +44,7 @@ function HeroSection() {
                         </div>
 
                         <p className="hero-description">
-                            I craft high-performance digital experiences at the intersection of design and engineering. Specializing in immersive web applications that push the boundaries
-
+                            I craft high-performance digital experiences at the intersection of design and engineering — building immersive web applications, fortifying systems with cybersecurity expertise, and uncovering insights through data science. Code is my superpower.
                         </p>
                         <a href="" className="hero-btn">
                             Get In Touch

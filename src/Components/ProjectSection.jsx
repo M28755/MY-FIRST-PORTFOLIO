@@ -7,15 +7,15 @@ function ProjectSection() {
         {
             id: 1,
             title: 'Admin Dashboard',
-            description: '',
+            description: 'A sleek, feature-rich admin dashboard built with React — featuring real-time data visualization, dynamic tables, and a responsive layout designed for seamless management of users, analytics, and content.',
             tags: ['React'],
             github: 'https://github.com/M28755/ADMIN-DASHBOARD',
             live: '#'
         },
         {
             id: 2,
-            title: "White Eagle Contructor",
-            description: "",
+            title: "White Eagle Constructor",
+            description: "A professional construction company website showcasing services, projects, and expertise. Built with pure HTML, CSS & JavaScript with a bold, clean aesthetic that communicates trust, strength, and reliability.",
             tags: ['HTML', "CSS", 'JAVASCRIPT'],
             github: 'https://github.com/M28755/WHITE-EANGLES-CONSTROCTOR',
             live: '#',

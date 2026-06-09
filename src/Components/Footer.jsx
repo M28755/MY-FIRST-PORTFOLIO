@@ -15,12 +15,12 @@ function Footer() {
         {/* Social Links */}
         <div className="footer-links">
           <a href="https://github.com/M28755" target="_blank" rel="noreferrer" className="footer-link">GitHub</a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="footer-link">LinkedIn</a>
-          <a href="https://twitter.com" target="_blank" rel="noreferrer" className="footer-link">Twitter</a>
+          <a href="https://linkedin.com/in/michael-otieno-b86703382" target="_blank" rel="noreferrer" className="footer-link">LinkedIn</a>
+          <a href="https://tiktok.com/@jaguar.king.of.jungle30" target="_blank" rel="noreferrer" className="footer-link">TikTok</a>
         </div>
 
         {/* Tagline */}
-        <p className="footer-tagline">Designed & Built with OMONDI MICHAEL</p>
+        <p className="footer-tagline">Designed &amp; Built by OMONDI MICHAEL</p>
 
         {/* Copyright */}
         <p className="footer-copyright">© {new Date().getFullYear()} Omondi Michael Otieno. All rights reserved.</p>
