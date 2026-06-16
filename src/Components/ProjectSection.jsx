@@ -18,7 +18,7 @@ function ProjectSection() {
             description: "A professional construction company website showcasing services, projects, and expertise. Built with pure HTML, CSS & JavaScript with a bold, clean aesthetic that communicates trust, strength, and reliability.",
             tags: ['HTML', "CSS", 'JAVASCRIPT'],
             github: 'https://github.com/M28755/WHITE-EANGLES-CONSTROCTOR',
-            live: '#',
+            live: 'https://whiteeaglec.netlify.app/',
             Image: imageModules['../assets/ProjrctImages/project2.png']?.default,
             /*  avatar: require('../assets/ProjrctImages/project2.png') */
         },

@@ -11,7 +11,7 @@
 
 ##  Live Preview
 
-> Coming soon — deploy to Netlify for a live URL.
+https://portfolio3087.netlify.app/
 
 ---
 
@@ -113,7 +113,7 @@ cd MY-FIRST-PORTFOLIO
 
 # 3. Install dependencies
 npm install
-
+    
 # 4. Start the development server
 npm run dev
 ```
