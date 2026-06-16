@@ -3,7 +3,8 @@ import { TypeAnimation } from 'react-type-animation'
 import './CSS/Herosection.css'
 import Image from '../assets/portfolio.jpeg'
 
-function HeroSection() {
+
+function HeroSection({ onGetOnTouch }) {
     return (
         <>
             <section className="hero">
@@ -46,7 +47,7 @@ function HeroSection() {
                         <p className="hero-description">
                             I craft high-performance digital experiences at the intersection of design and engineering — building immersive web applications, fortifying systems with cybersecurity expertise, and uncovering insights through data science. Code is my superpower.
                         </p>
-                        <a href="#contact" className="hero-btn">
+                        <a className="hero-btn" onClick={onGetOnTouch}>
                             Get In Touch
                         </a>
                         <div className="social-media">

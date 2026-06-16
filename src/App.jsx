@@ -1,3 +1,5 @@
+
+import { useRef } from 'react'
 import Navbar from './Components/Navbar'
 import './App.css'
 import HeroSection from './Components/HeroSection'
@@ -8,18 +10,27 @@ import Footer from './Components/Footer'
 
 
 
+
+
 function App() {
 
+  const contactRef = useRef(null);
 
+  const scrollToContact = () => {
+    contactRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: 'start'
+    })
+  }
   return (
     <>
       <div className="app-container">
         <Navbar />
-        <HeroSection />
+        <HeroSection onGetOnTouch={scrollToContact} />
         <AboutSection />
         <ProjectSection />
-        <ContactSection/>
-        <Footer/>
+        <ContactSection ref={contactRef} />
+        <Footer />
       </div>
 
     </>
