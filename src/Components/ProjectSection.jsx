@@ -18,7 +18,7 @@ function ProjectSection() {
             description: "A professional construction company website showcasing services, projects, and expertise. Built with pure HTML, CSS & JavaScript with a bold, clean aesthetic that communicates trust, strength, and reliability.",
             tags: ['HTML', "CSS", 'JAVASCRIPT'],
             github: 'https://github.com/M28755/WHITE-EANGLES-CONSTROCTOR',
-            live: 'https://whiteeaglec.netlify.app/',
+            live: 'https://whiteeaglec.netlify.app/ ',
             Image: imageModules['../assets/ProjrctImages/project2.png']?.default,
             /*  avatar: require('../assets/ProjrctImages/project2.png') */
         },
@@ -88,8 +88,8 @@ function ProjectSection() {
 
                                 {/* Action buttton */}
                                 <div className="project-links">
-                                    <a href={project.github} target="_self" rel="noreferrer" className="project-btn">GitHub</a>
-                                    <a href={project.live} target="_self" rel="noreferrer" className="project-btn primary-btn">Live Demo</a>
+                                    <a href={project.github} target="_blank" rel="noreferrer" className="project-btn">GitHub</a>
+                                    <a href={project.live} target="_blank" rel="noreferrer" className="project-btn primary-btn">Live Demo</a>
 
                                 </div>
                             </div>
